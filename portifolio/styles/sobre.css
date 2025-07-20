@@ -9,15 +9,91 @@
 }
 
 
-#pg2 {
-    background-color: var(--cor4);
-    color: black;
-    margin-top: 10vh;
-    padding: 20px 10px;
+
+.hidden {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease-out;
 }
 
-.sobre {
-    background-color: var(--cor1);
-    border-radius: 20px;
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
 
+
+
+
+#sobre {
+    background: linear-gradient(135deg, var(--cor3), var(--cor2));
+    padding: 80px 20px;
+    color: white;
+    text-align: left;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.titulo-sessao {
+    font-family: var(--fonte-mono);
+    color: var(--cor1);
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    text-shadow: 5px 5px 3px black;
+}
+
+.sobre-texto {
+    font-family: var(--fonte-mono);
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    max-width: 800px;
+}
+
+.habilidades {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    font-family: var(--fonte-mono);
+    font-size: 1.1rem;
+    color: var(--cor1);
+}
+
+.curiosidade {
+    font-style: italic;
+    color: #ccc;
+    font-size: 1.1rem;
+    max-width: 800px;
+}
+
+@media (max-width: 600px) {
+    .titulo-sessao {
+        font-size: 1.7rem;
+        text-align: left;
+    }
+
+    .sobre-texto,
+    .curiosidade {
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    .habilidades {
+        grid-template-columns: 1fr;
+        text-align: left;
+    }
+}
+
+.sobre-texto::after {
+    content: "|";
+    animation: blink 1s infinite;
+    color: var(--cor1);
+    font-weight: bold;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
 }
