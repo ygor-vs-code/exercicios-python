@@ -24,7 +24,7 @@ body {
     background-color: var(--cor3);
     background-image: url('assets/imagem-fundo.png');
     background-attachment: fixed;
-    background-size: 100vh;
+    background-size: 100vw;
     color: white;
     font-family: var(--fonte-padrao);
     min-height: 100vh;
@@ -151,6 +151,10 @@ main {
 }
 
 @media (max-width: 768px) {
+    body {
+        background-size: 100vh;
+    }
+
     header {
         flex-direction: row;
         gap: 15px;
