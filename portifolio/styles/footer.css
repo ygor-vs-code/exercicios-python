@@ -1,0 +1,46 @@
+:root {
+    --cor-footer: #020a16;
+    --cor-texto: #ffffff;
+    --cor-link: #ffd43b;
+    --fonte-mono: "Fira Code", monospace;
+}
+
+.footer {
+    background-color: var(--cor-footer);
+    color: var(--cor-texto);
+    text-align: center;
+    padding: 40px 20px;
+    font-family: var(--fonte-mono);
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease-out;
+}
+
+.footer.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.footer a {
+    color: var(--cor-link);
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: white;
+}
+
+.mensagem-extra {
+    font-style: italic;
+    font-size: 1rem;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .mensagem-extra {
+        font-size: 0.9rem;
+    }
+}
