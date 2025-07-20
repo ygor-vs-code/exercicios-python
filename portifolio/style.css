@@ -21,7 +21,7 @@ html {
 }
 
 body {
-    background: linear-gradient(135deg, var(--cor2), var(--cor3));
+    background-color: var(--cor3);
     background-image: url('assets/imagem-fundo.png');
     background-attachment: fixed;
     background-size: 100%;
