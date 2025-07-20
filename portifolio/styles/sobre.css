@@ -1,0 +1,23 @@
+:root {
+    --cor1: #ffd43b;
+    --cor2: #0a192f;
+    --cor3: #06101f;
+    --cor4: #132c51;
+
+    --fonte-padrao: "Poppins", sans-serif;
+    --fonte-mono: "Fira Code", monospace;
+}
+
+
+#pg2 {
+    background-color: var(--cor4);
+    color: black;
+    margin-top: 10vh;
+    padding: 20px 10px;
+}
+
+.sobre {
+    background-color: var(--cor1);
+    border-radius: 20px;
+
+}
