@@ -22,6 +22,9 @@ html {
 
 body {
     background: linear-gradient(135deg, var(--cor2), var(--cor3));
+    background-image: url('assets/imagem-fundo.png');
+    background-attachment: fixed;
+    background-size: 100%;
     color: white;
     font-family: var(--fonte-padrao);
     min-height: 100vh;

@@ -3,6 +3,8 @@
     --cor2: #0a192f;
     --cor3: #06101f;
     --cor4: #132c51;
+    --cor2t: #0a192fce;
+    --cor3t: #06101fd2;
 
     --fonte-padrao: "Poppins", sans-serif;
     --fonte-mono: "Fira Code", monospace;
@@ -25,7 +27,7 @@
 
 
 #sobre {
-    background: linear-gradient(135deg, var(--cor3), var(--cor2));
+    background-color: var(--cor3t);
     padding: 80px 20px;
     color: white;
     text-align: left;
