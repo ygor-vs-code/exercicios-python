@@ -27,11 +27,11 @@
 
 
 #sobre {
-    background-color: var(--cor3t);
+    background-color: var(--cor3);
     padding: 80px 20px;
     color: white;
     text-align: left;
-    max-width: 1000px;
+    justify-items: center;
     margin: 0 auto;
 }
 
@@ -41,6 +41,7 @@
     font-size: 2.2rem;
     margin-bottom: 30px;
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.521);
+    justify-self: center;
 }
 
 .sobre-texto {
@@ -48,7 +49,7 @@
     font-size: 1.2rem;
     line-height: 1.8;
     margin-bottom: 40px;
-    max-width: 800px;
+    max-width: 900px;
 }
 
 .habilidades {

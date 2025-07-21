@@ -33,7 +33,7 @@ function iniciarDigitacao() {
                 textoElemento.innerHTML += texto.charAt(index);
                 index++;
             }
-            setTimeout(digitar, 20);
+            setTimeout(digitar, 10);
         }
     }
 

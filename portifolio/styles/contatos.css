@@ -1,0 +1,71 @@
+:root {
+  --cor1: #ffd43b;
+  --cor2: #0a192f;
+  --cor4: #132c51;
+  --fonte-mono: "Fira Code", monospace;
+}
+
+.contato {
+  background-color: var(--cor2);
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+
+.contato.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.titulo-sessao {
+  font-family: var(--fonte-mono);
+  color: var(--cor1);
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  text-shadow: 5px 5px 3px black;
+}
+
+.contato-msg {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #ccc;
+  font-style: italic;
+}
+
+.contato-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.link-contato {
+  background-color: var(--cor4);
+  padding: 15px 25px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: var(--cor1);
+  text-decoration: none;
+  font-family: var(--fonte-mono);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.link-contato:hover {
+  transform: scale(1.05);
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 600px) {
+  .contato-msg {
+    font-size: 1rem;
+  }
+
+  .link-contato {
+    font-size: 1rem;
+    padding: 12px 20px;
+  }
+}

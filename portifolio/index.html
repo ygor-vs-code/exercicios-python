@@ -8,17 +8,22 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styles/sobre.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/projetos.css">
+    <link rel="stylesheet" href="styles/contatos.css">
 </head>
 
 <body>
+    <button id="btnTopo" title="Voltar ao topo">↑</button>
+
     <header>
         <a href="#" class="home">Ygor</a>
         <ul class="nav-bar">
             <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#">Projetos</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
         </ul>
     </header>
+
     <main>
         <div class="therminal">
             <p id="linha1"></p>
@@ -34,6 +39,7 @@
             </div>
         </div>
     </main>
+
     <div id="pg2">
 
         <div class="sobre hidden" id="sobre">
@@ -63,16 +69,73 @@
 
         </div>
     </div>
+
+    <section class="projetos hidden" id="projetos">
+        <h3 class="titulo-sessao">/projetos</h3>
+        <div class="projetos-container">
+
+            <div class="card-projeto">
+                <h4>Projeto Cordel</h4>
+                <p>Um projeto do Cordel de Milton Duarte - Exercío do Curso em Vídeo</p>
+                <a href="https://ygor-vs-code.github.io/projeto-cordel/index.html" target="_blank">Ver projeto →</a>
+            </div>
+
+            <div class="card-projeto">
+                <h4>Catalogo de Produtos</h4>
+                <p>Um catálogo de produtos simples feito em Python para treinar lógica de programação.</p>
+                <a href="https://github.com/ygor-vs-code/exercicios-python/blob/main/catalogo_de_produtos/catalogo_de_produtos.py" target="_blank">Ver projeto →</a>
+            </div>
+
+            <div class="card-projeto">
+                <h4>Mini Game de Turnos com Python</h4>
+                <p>Um jogo de terminal simples feito em Python para treinar lógica de programação.</p>
+                <a href="https://github.com/ygor-vs-code/exercicios-python/blob/main/dark_souls_6/dark_souls_6.py" target="_blank">Ver projeto →</a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="contato hidden" id="contato">
+        <h3 class="titulo-sessao">/contato</h3>
+
+        <p class="contato-msg">
+            Vamos conversar? Escolha uma forma de contato:
+        </p>
+
+        <div class="contato-links">
+            <a href="mailto:ygor.vs.code@gmail.com" class="link-contato" target="_blank">
+                📧 E-mail
+            </a>
+
+            <a href="https://github.com/ygor-vs-code" class="link-contato" target="_blank">
+                💻 GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/in/ygor-santos-847870375/" class="link-contato" target="_blank">
+                🔗 LinkedIn
+            </a>
+
+            <a href="https://wa.me/5511984277083" class="link-contato" target="_blank">
+                💬 WhatsApp
+            </a>
+        </div>
+    </section>
+
+    
+    
+    
     <footer class="footer hidden" id="footer">
         <p>&copy; Feito com 💻 e ☕ por
             <a href="https://instagram.com/ygorvito1" target="_blank" id="insta-link">Ygor Santos</a>
         </p>
         <p class="mensagem-extra">"Cada linha de código é uma peça do meu quebra-cabeça."</p>
     </footer>
-
-    <script src="scripts/footer.js"></script>
     <script src="script.js"></script>
     <script src="scripts/sobre.js"></script>
+    <script src="scripts/footer.js"></script>
+    <script src="scripts/projetos.js"></script>
+    <script src="scripts/contatos.js"></script>
 </body>
 
 </html>
