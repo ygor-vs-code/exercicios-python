@@ -14,7 +14,7 @@ window.addEventListener("DOMContentLoaded", () => {
     const linha1 = document.getElementById("linha1");
     const linha2 = document.getElementById("linha2");
 
-    digitarTexto(linha1, "$ python portifolio.py", 60, () => {
+    digitarTexto(linha1, "$ python portfolio.py", 60, () => {
         setTimeout(() => {
             digitarTexto(linha2, "> Hello, World!", 60);
         }, 500);
